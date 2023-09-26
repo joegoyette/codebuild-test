@@ -1,4 +1,4 @@
-FROM python:3.8-slim as builder
+FROM public.ecr.aws/docker/library/python:3.8-slim
 COPY . /src
 RUN pip install --user fastapi uvicorn boto3 flask
 
